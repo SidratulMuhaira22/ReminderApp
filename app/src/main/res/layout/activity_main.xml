@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="425dp"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:contentDescription="@string/logo"
+            android:paddingTop="7dp"
+            android:src="@drawable/logo" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/reminder_app"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:textSize="20sp"
+           android:layout_marginStart="30dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_todos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="457dp"
+        android:nestedScrollingEnabled="false" />
+
+    <ImageView
+        android:id="@+id/img_add"
+        android:layout_width="63dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="309dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/plus_circle"
+        android:contentDescription="@string/img_add"/>
+</RelativeLayout>
